@@ -1,9 +1,124 @@
+:root{
+    --primary-color:#f4f2f0;
+    --secundary-color:white;
+    --principal-font:'muslish';
+    --size-titles:3em;
+    --size-subtitles:1.5em;
+    --size-normal-text:1em;
+}
+h1{
+    font-size: var(--size-titles);
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: var(--principal-font);
+}
+img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+}
 @font-face{
     font-family: 'muslish';
     src:url('Mulish-Italic-VariableFont_wght.ttf') format('truetype');
 }
+.header{
+    display: flex;
+    width: 100vw;
+    height: 6vh;
+    align-items: center;
+    background-color: var(--secundary-color);
+}
+.header__logo{
+    background-color: var(--secundary-color);
+    margin-top: 1%;
+    width: 5%;
+    height: 100px;
+}
+.header__nav{
+    background-color: var(--secundary-color);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.header__list{
+    background-color: var(--secundary-color);
+    justify-content: center;
+    margin: auto;
+    list-style: none;
+    padding-top: 1%;
+    display: flex;
+    width: 100vw;
 
-/* body{
-    font-family: 'muslish';
-} */
-
+}
+.header__listelement{
+    background-color: var(--secundary-color);
+}
+.header__sections{
+    background-color: var(--secundary-color);
+    font-size: var(--size-subtitles);
+    text-decoration: none;
+    margin: 10px 70px;
+}
+.home{
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+.home__description{
+    font-size: var(--size-normal-text);
+    margin: auto;
+    margin-top: 2.5%;
+    width: 70%;
+}
+.products{
+    justify-content: space-between;
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.products__product{
+    padding: 26px;
+    width: 20%;
+    background-color: var(--secundary-color);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 10%;
+}
+.products__button{
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--secundary-color);
+}
+.products__title{
+    background-color: var(--secundary-color);
+    justify-content: center;
+}
+.products__description{
+    background-color: var(--secundary-color);
+    justify-content: center;
+}
+.products__price{
+    background-color: var(--secundary-color);
+    justify-content: center;
+}
+.container__socialmedia{
+    display: flex;
+    justify-content: center;
+}
+.contact__title{
+    font-size: var(--size-subtitles);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contact__media{
+    margin: 50px;
+}
+.contact__img{
+    width: 200px;
+    height: 200px;
+}
